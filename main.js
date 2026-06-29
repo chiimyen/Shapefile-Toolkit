@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
+﻿const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const fs = require('fs');
 
@@ -38,7 +38,7 @@ ipcMain.on('window-close', () => mainWindow?.close());
 
 ipcMain.handle('dialog-open-shp', async () => {
   const r = await dialog.showOpenDialog(mainWindow, {
-    title: '选择 Shapefile 文件',
+    title: '閫夋嫨 Shapefile 鏂囦欢',
     filters: [{ name: 'Shapefile', extensions: ['shp'] }, { name: 'All Files', extensions: ['*'] }],
     properties: ['openFile', 'multiSelections']
   });
@@ -47,7 +47,7 @@ ipcMain.handle('dialog-open-shp', async () => {
 
 ipcMain.handle('dialog-open-folder', async () => {
   const r = await dialog.showOpenDialog(mainWindow, {
-    title: '选择包含 Shapefile 的文件夹',
+    title: '閫夋嫨鍖呭惈 Shapefile 鐨勬枃浠跺す',
     properties: ['openDirectory']
   });
   return r.canceled ? [] : r.filePaths;
