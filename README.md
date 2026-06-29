@@ -1,92 +1,132 @@
-# Shapefile Toolkit
+# 🗺️ Shapefile Toolkit
 
-> The most beautiful SHP batch processing tool for Windows GIS data workflow.
+> A modern Windows desktop toolkit for batch processing ESRI Shapefiles.
 
-![Electron](https://img.shields.io/badge/Electron-28.1.0-47848F) ![Node](https://img.shields.io/badge/Node-18%2B-339933) ![License](https://img.shields.io/badge/License-MIT-yellow)
+![Platform](https://img.shields.io/badge/Platform-Windows-blue)
+![Electron](https://img.shields.io/badge/Electron-28+-47848F)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-## Overview
+------------------------------------------------------------------------
 
-Shapefile Toolkit is a professional-grade Windows desktop application built with Electron for batch processing GIS Shapefile (.shp) data. It provides a modern, dark-themed UI for managing, previewing, converting, and performing spatial operations on shapefile layers with zero configuration required.
+## ✨ Overview
 
-## Features
+Shapefile Toolkit is a lightweight desktop application designed for GIS
+professionals, students, and researchers who frequently work with ESRI
+Shapefiles.
 
-### Core Capabilities
+Instead of relying on heavy GIS software for simple operations,
+Shapefile Toolkit provides an intuitive interface for viewing,
+converting, previewing, and processing shapefiles with just a few
+clicks.
 
-- **Batch Import** - Drag & drop or file dialog to load multiple .shp files at once
-- **Layer Management** - Sidebar with layer list, metadata, and context menu actions
-- **Attribute Table** - Sortable, searchable data grid for viewing and inspecting feature attributes
-- **Geometry Preview** - Canvas-based interactive preview with zoom, pan, and fit-to-view
-- **Format Conversion** - Export to GeoJSON, CSV, JSON with a single click
-- **Spatial Operations** - Buffer, Simplify, Centroid, Dissolve using Turf.js
-- **Batch Export** - Bulk export or zip-package all loaded layers
+------------------------------------------------------------------------
 
-### Technical Highlights
+## 🚀 Features
 
-- Frameless custom titlebar with window controls (minimize/maximize/close)
-- Dark theme inspired by modern GIS tools like QGIS Dark and ArcGIS Pro
-- Memory-efficient streaming shapefile reader using the `shapefile` library
-- Spatial computation via `@turf/turf` for professional-grade geometry operations
-- ContextIsolation + preload pattern for secure Electron architecture
+### 📂 Batch Import
 
-## Getting Started
+-   Drag & Drop Shapefiles
+-   Import multiple files simultaneously
+-   Folder import support
 
-### Prerequisites
+### 🗂 Layer Management
 
-- Node.js 18+
-- npm 8+
+-   Layer list
+-   Geometry type detection
+-   Metadata display
+-   File size information
 
-### Installation
+### 📊 Attribute Table
 
-```bash
-git clone https://github.com/your-username/shapefile-toolkit.git
-cd shapefile-toolkit
-npm install
-npm start
-```
+-   Sort records
+-   Search attributes
+-   Scrollable data table
 
-### Development
+### 🗺 Geometry Preview
 
-```bash
-npm run dev
-```
+-   Interactive Canvas rendering
+-   Zoom
+-   Pan
+-   Reset View
 
-## Project Structure
+### 🌍 Spatial Operations
 
-```
-shapefile-toolkit/
-├── main.js              # Electron main process
-├── preload.js           # Context bridge preload
-├── package.json
-├── lib/
-│   ├── shp-service.js   # Shapefile reading & directory scanning
-│   ├── converter.js     # GeoJSON/CSV/JSON format conversion
-│   └── spatial.js       # Turf.js spatial operations
-└── src/
-    ├── index.html       # Main UI layout
-    ├── styles/
-    │   └── app.css      # Dark theme stylesheet
-    ├── js/
-    │   ├── app.js             # Application entry point
-    │   ├── drag-drop.js       # File import & layer management
-    │   ├── layer-list.js      # Layer detail & info panel
-    │   ├── attribute-table.js # Sortable/searchable attribute grid
-    │   ├── map-preview.js     # Canvas geometry renderer
-    │   ├── batch-tasks.js     # Batch processing operations
-    │   └── export-dialog.js   # Format conversion & export
-    └── assets/
-```
+-   Buffer
+-   Simplify
+-   Centroid
+-   Dissolve
 
-## Dependencies
+Powered by Turf.js.
 
-| Package | Purpose |
-|---------|---------|
-| `shapefile` | Streaming .shp/.dbf file reader |
-| `@turf/turf` | Spatial analysis & geometry operations |
-| `jszip` | Batch zip export packaging |
-| `csv-stringify` / `csv-parse` | Attribute CSV format handling |
-| `proj4` | Coordinate reference system utilities |
-| `wellknown` | WKT/WKB format parser |
+### 🔄 Format Conversion
 
-## License
+Supports conversion between:
 
-MIT
+-   SHP
+-   GeoJSON
+-   CSV
+-   JSON
+
+### 📦 Batch Export
+
+-   Export individual files
+-   Export ZIP package
+
+------------------------------------------------------------------------
+
+## 📸 Screenshots
+
+> Coming soon.
+
+After the UI is finalized, screenshots will be added here.
+
+------------------------------------------------------------------------
+
+## 📥 Download
+
+Download the latest version from the **Releases** page.
+
+No installation required.
+
+1.  Download the ZIP package.
+2.  Extract it.
+3.  Run `Shapefile Toolkit.exe`.
+
+------------------------------------------------------------------------
+
+## 🛠 Built With
+
+-   Electron
+-   Node.js
+-   Turf.js
+-   shapefile
+-   proj4
+-   JSZip
+
+------------------------------------------------------------------------
+
+## 🗺 Roadmap
+
+-   [ ] Coordinate System Conversion
+-   [ ] SHP Merge
+-   [ ] SHP Split
+-   [ ] Batch Rename
+-   [ ] Field Calculator
+-   [ ] Excel Export
+-   [ ] GeoPackage Support
+-   [ ] Plugin System
+
+------------------------------------------------------------------------
+
+## 🤝 Contributing
+
+Issues and Pull Requests are welcome.
+
+If you encounter bugs or have feature requests, please open an Issue.
+
+------------------------------------------------------------------------
+
+## 📄 License
+
+Released under the MIT License.
