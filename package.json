@@ -1,0 +1,27 @@
+{
+  "name": "shapefile-toolkit",
+  "version": "1.0.0",
+  "description": "Professional Windows GIS Data Batch Processing Toolbox - The most beautiful SHP batch tool",
+  "main": "main.js",
+  "author": "Shapefile Toolkit",
+  "license": "MIT",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev"
+  },
+  "dependencies": {
+    "@turf/turf": "^6.5.0",
+    "csv-parse": "^5.5.2",
+    "csv-stringify": "^6.4.4",
+    "jszip": "^3.10.1",
+    "proj4": "^2.9.0",
+    "shapefile": "^0.6.6",
+    "wellknown": "^0.5.0"
+  },
+  "devDependencies": {
+    "electron": "^28.1.0"
+  },
+  "allowScripts": {
+    "electron@28.1.0": true
+  }
+}
